@@ -197,6 +197,10 @@ QStringList Commander::listDeviceNames(QStringList devids)
         }
         args.clear();
     }
+    if(retval.isEmpty())
+    {
+        retval = devids;
+    }
     return retval;
 }
 
